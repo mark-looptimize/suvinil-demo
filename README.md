@@ -1,4 +1,4 @@
-This is a Next.js v12.5.1 project bootstrapped with [`create-next-app`] that is designed to demonstrate how to easily integrate our code within your own project.
+This is a Next.js v12.5.1 project bootstrapped with `create-next-app` that is designed to demonstrate how to easily integrate our code within your own project.
 
 ## Getting Started
 
@@ -55,7 +55,9 @@ Here you are able to find all of our code, toolchains etc which is mostly just f
 ### Why use Web Components and not React?
 
 As an agency who has to work with a large number of clients across a wide variety of technology stacks we needed to find a solution which works equally well for everybody regardless of what frameworks they are using. 
-The only realistic option to deliver that goal for us is to take advantage of the browser's native component model (i.e. Web Components) which allows each framework to work with it the same as any other standard HTML element. As you can see on the website [Custom Elements Everywhere](https://custom-elements-everywhere.com/) almost every framework provides excellent interoperability with this approach out of the box without any additional work. However, as you may see from that website React is currently the one main exception to this rule. Until this is resolved with the upcoming release of React v19 we need to __wrap__ the component with a small amount of interop glue code. This is handled automatically for us through the use of the `@lit-labs/nextjs` package.
+The only realistic option to deliver that goal for us is to take advantage of the browser's native component model (i.e. Web Components) which allows each framework to work with it the same as any other standard HTML element. 
+
+As you can see on the website [Custom Elements Everywhere](https://custom-elements-everywhere.com/) almost every framework provides excellent interoperability with this approach out of the box without any additional work. However, as you may see from that website React is currently the one main exception to this rule. Until this is resolved with the upcoming release of React v19 we need to __wrap__ the component with a small amount of interop glue code. This is handled automatically for us through the use of the `@lit-labs/nextjs` package.
 
 ### Does this work with server side rendering?
 
@@ -67,7 +69,7 @@ Take a look at the README for `@lit-labs/nextjs` [here](https://github.com/lit/l
 
 ### Will this impact our performance?
 
-Almost certainly not. We also chose this approach with our clients precisely because it was extremely fast and lightweight in addition to the interoperability benefits. As you can see in the screenshot below the total filesize is barely 5kb which includes:
+Almost certainly not. We also chose this approach with our clients precisely because it was extremely fast and lightweight in addition to the interoperability benefits. As you can see in the screenshot below the total filesize is barely 5kB which includes:
 - The component code (i.e. all of the HTML / CSS / JS)
 - The React compatability layer
 - A [micro library from Google](https://lit.dev) that provides a React like development experience on top of plain Web Components
